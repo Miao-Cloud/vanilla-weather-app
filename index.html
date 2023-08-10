@@ -10,12 +10,85 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
-  <body>
+  <body class="body">
+    <br />
     <div class="container">
-      <h1>Hello World</h1>
+      <div class="weather">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input type="submit" class="btn btn-primary" value="Search" />
+            </div>
+          </div>
+        </form>
+        <br />
+        <hr />
+        <div class="weatherInfo">
+          <div class="row">
+            <div class="col-6">
+              <h1>London</h1>
+              <ul>
+                <li><span> Monday 12:05</span>, cloudy</li>
+                <li>
+                  Humidity: <strong>59 %</strong>, Wind:
+                  <strong>4.12 km/h</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-8">
+              <div class="temperature-container d-flex justify-content-end">
+                <canvas width="52" height="52"></canvas>
+                <div>
+                  <span class="temperature">25</span>
+                  <span class="unit">°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row temps">
+          <div class="col">
+            Wed <br /><i class="fa-solid fa-sun"></i> <br />20°c
+          </div>
+          <div class="col">
+            Thu <br /><i class="fa-solid fa-cloud-rain"></i> <br />18°c
+          </div>
+          <div class="col">
+            Fri <br /><i class="fa-solid fa-sun"></i> <br />22°c
+          </div>
+          <div class="col">
+            Sat <br /><i class="fa-solid fa-sun"></i> <br />21°c
+          </div>
+          <div class="col">
+            Sun <br /><i class="fa-solid fa-cloud-showers-heavy"></i> <br />17°c
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="signature">
+        This project is was created by
+        <a href="https://twitter.com/_MiaoCloud">Kai</a> and is
+        <a href="https://github.com/Miao-Cloud/vanilla-weather-app"
+          >open source on GitHub</a
+        >
+      </div>
     </div>
     <link rel="stylesheet" href="src/app.js" />
+    <script
+      src="https://kit.fontawesome.com/3cc9d87130.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
