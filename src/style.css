@@ -73,10 +73,15 @@
 .dark .temps {
   color: #ececec;
 }
-.dark .signature {
-  color: hsla(0, 0%, 93%, 0.5);
+.weather .unit a {
+  color: #ececec;
 }
-
+.dark .signature {
+  color: rgba(237, 237, 237, 0.5);
+}
+.dark .signature a {
+  color: #ececec;
+}
 .weather {
   max-width: 800px;
   margin: 0 auto;
@@ -162,7 +167,9 @@
   position: relative;
   top: -34px;
 }
-
+.weather .unit a {
+  color: #212b42;
+}
 .temps {
   text-align: center;
   font-size: 18px;
@@ -184,4 +191,7 @@
   text-align: center;
   font-style: italic;
   color: rgba(33, 43, 66, 0.5);
+}
+.signature a {
+  color: #a8b5e0;
 }
