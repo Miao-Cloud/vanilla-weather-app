@@ -20,10 +20,11 @@
     <br />
     <div class="container">
       <div class="weather">
-        <form>
+        <form id="lookUp">
           <div class="row">
             <div class="col-9">
               <input
+                id="city"
                 type="search"
                 placeholder="Enter a city.."
                 class="form-control search-input"
@@ -39,12 +40,17 @@
         <div class="weatherInfo">
           <div class="row">
             <div class="col-6">
-              <h1>London</h1>
+              <h1 id="cCity" class="currentCity"></h1>
               <ul>
-                <li><span> Monday 12:05</span>, cloudy</li>
                 <li>
-                  Humidity: <strong>59 %</strong>, Wind:
-                  <strong>4.12 km/h</strong>
+                  <span class="day">Monday</span>
+                  <span class="time">12:05</span>
+                  <div id="desc">Cloudy</div>
+                </li>
+                <li>
+                  Humidity:
+                  <strong><span id="humidity">59</span>%</strong> Wind:
+                  <strong><span id="wind">4.12 </span> km/h</strong>
                 </li>
               </ul>
             </div>
@@ -52,7 +58,7 @@
               <div class="temperature-container d-flex justify-content-end">
                 <canvas width="52" height="52"></canvas>
                 <div>
-                  <span class="temp">25</span>
+                  <span id="temperature" class="temp">25</span>
                   <span class="unit">°C | <a href="#">°F</a></span>
                 </div>
               </div>

@@ -138,6 +138,7 @@
   color: rgba(33, 43, 66, 0.5);
   font-size: 18px;
   font-weight: 500;
+  text-transform: capitalize;
   line-height: 30px;
   list-style: none;
   padding: 0;
