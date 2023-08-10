@@ -137,7 +137,6 @@
 .weatherInfo ul {
   color: rgba(33, 43, 66, 0.5);
   font-size: 18px;
-  font-weight: 500;
   text-transform: capitalize;
   line-height: 30px;
   list-style: none;
@@ -152,21 +151,15 @@
 
 .weather .temp {
   color: #212b42;
-  font-size: 70px;
-  font-weight: 400;
-  font-weight: 700;
-  line-height: 1;
+  font-size: 65px;
   margin-left: 10px;
 }
 
 .weather .unit {
   color: #212b42;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 36px;
-  line-height: 1;
+  font-size: 16px;
   position: relative;
-  top: -34px;
+  bottom: -20px;
 }
 .weather .unit a {
   color: #212b42;
@@ -183,9 +176,8 @@
   color: #212b4280;
 }
 
-.emoji {
-  font-size: 40px;
-  color: #212b42;
+.tempImg {
+  width: 95px;
 }
 
 .signature {

@@ -56,9 +56,10 @@
             <div class="col-lg-6 col-md-6 col-sm-8">
               <div class="temperature-container d-flex justify-content-end">
                 <canvas width="52" height="52"></canvas>
-                <div>
-                  <span id="temperature" class="temp">25</span>
-                  <span class="unit">°C | <a href="#">°F</a></span>
+                <div class="d-flex weather-temperature">
+                  <img id="icon" src="" alt="clear" />
+                  <span id="temperature" class="temp"></span>
+                  <span class="unit">°C|<a href="#">°F</a></span>
                 </div>
               </div>
             </div>
@@ -71,7 +72,11 @@
             <div class="wForecast">
               <div class="fDay">Tue</div>
               <br />
-              <i class="fa-solid fa-sun emoji"></i>
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
               <div class="fTemp">
                 <br />
                 <span class="fTemp">25°c</span>
@@ -82,7 +87,11 @@
             <div class="wForecast">
               <div class="fDay">Wed</div>
               <br />
-              <i class="fa-solid fa-sun emoji"></i>
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
               <div class="fTemp">
                 <br />
                 <span class="fTemp">24°c</span>
@@ -93,7 +102,11 @@
             <div class="wForecast">
               <div class="fDay">Thu</div>
               <br />
-              <i class="fa-solid fa-sun emoji"></i>
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
               <div class="fTemp">
                 <br />
                 <span class="fTemp">21°c</span>
@@ -104,7 +117,11 @@
             <div class="wForecast">
               <div class="fDay">Fri</div>
               <br />
-              <i class="fa-solid fa-sun emoji"></i>
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
               <div class="fTemp">
                 <br />
                 <span class="fTemp">22°c</span>
@@ -115,7 +132,11 @@
             <div class="wForecast">
               <div class="fDay">Sat</div>
               <br />
-              <i class="fa-solid fa-sun emoji"></i>
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
               <div class="fTemp">
                 <br />
                 <span class="fTemp">21°c</span>
@@ -137,9 +158,5 @@
       <button class="themeButton">Dark Mode</button>
     </div>
     <script src="src/app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/3cc9d87130.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
