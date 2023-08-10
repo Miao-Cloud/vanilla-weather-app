@@ -2,6 +2,81 @@
   display: block;
   background: #d5e3f0;
 }
+
+.themeButton {
+  background: #a8b5e0;
+  color: #212b42;
+  border: 1px solid #a8b5e0;
+
+  font-family: Century Gothic;
+  font-size: 12px;
+  display: block;
+  margin: 10px auto;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.themeButton:hover {
+  color: #212b42;
+  background: none;
+  border: 1px solid #212b42;
+
+  cursor: pointer;
+}
+.dark .themeButton {
+  background: #1f1f1f;
+  color: #ececec;
+  border: 1px solid #1f1f1f;
+}
+.dark .themeButton:hover {
+  color: #ececec;
+  background: none;
+  border: 1px solid #ececec;
+}
+.dark {
+  background: #000000;
+}
+.dark .weather input.search-input {
+  background: #000000;
+}
+.dark .weather .btn {
+  background: #1f1f1f;
+  color: #ececec;
+  border: 1px solid #ececec;
+}
+.dark .weather .btn:hover {
+  background: #1f1f1f;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.dark .weather {
+  background: #1f1f1f;
+}
+.dark .weatherInfo h1 {
+  color: #ececec;
+}
+.dark .weatherInfo ul {
+  color: #ececec;
+}
+.dark .weatherInfo .temp {
+  color: #ececec;
+}
+.dark .weatherInfo .unit {
+  color: #ececec;
+}
+.dark .fDay {
+  color: #ececec;
+}
+.dark .emoji {
+  color: #ececec;
+}
+.dark .temps {
+  color: #ececec;
+}
+.dark .signature {
+  color: hsla(0, 0%, 93%, 0.5);
+}
+
 .container {
   max-width: 900px;
 }
@@ -45,6 +120,7 @@
 
   cursor: pointer;
 }
+
 .weatherInfo h1 {
   display: block;
   color: #212b42;
@@ -69,7 +145,7 @@
   margin-top: 30px;
 }
 
-.weather .temperature {
+.weather .temp {
   color: #212b42;
   font-size: 70px;
   font-weight: 400;
@@ -91,8 +167,18 @@
 .temps {
   text-align: center;
   font-size: 18px;
+  color: #212b42;
 
   padding: 50px 0;
+}
+
+.fDay {
+  color: #212b4280;
+}
+
+.emoji {
+  font-size: 40px;
+  color: #212b42;
 }
 
 .signature {

@@ -15,6 +15,9 @@
   </head>
   <body class="body">
     <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
       <div class="weather">
         <form>
@@ -27,7 +30,7 @@
               />
             </div>
             <div class="col-3 p-0">
-              <input type="submit" class="btn btn-primary" value="Search" />
+              <input type="submit" class="btn" value="Search" />
             </div>
           </div>
         </form>
@@ -49,7 +52,7 @@
               <div class="temperature-container d-flex justify-content-end">
                 <canvas width="52" height="52"></canvas>
                 <div>
-                  <span class="temperature">25</span>
+                  <span class="temp">25</span>
                   <span class="unit">°C</span>
                 </div>
               </div>
@@ -60,23 +63,64 @@
         <hr />
         <div class="row temps">
           <div class="col">
-            Wed <br /><i class="fa-solid fa-sun"></i> <br />20°c
+            <div class="wForecast">
+              <div class="fDay">Tue</div>
+              <br />
+              <i class="fa-solid fa-sun emoji"></i>
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">25°c</span>
+              </div>
+            </div>
           </div>
           <div class="col">
-            Thu <br /><i class="fa-solid fa-cloud-rain"></i> <br />18°c
+            <div class="wForecast">
+              <div class="fDay">Wed</div>
+              <br />
+              <i class="fa-solid fa-sun emoji"></i>
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">24°c</span>
+              </div>
+            </div>
           </div>
           <div class="col">
-            Fri <br /><i class="fa-solid fa-sun"></i> <br />22°c
+            <div class="wForecast">
+              <div class="fDay">Thu</div>
+              <br />
+              <i class="fa-solid fa-sun emoji"></i>
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">21°c</span>
+              </div>
+            </div>
           </div>
           <div class="col">
-            Sat <br /><i class="fa-solid fa-sun"></i> <br />21°c
+            <div class="wForecast">
+              <div class="fDay">Fri</div>
+              <br />
+              <i class="fa-solid fa-sun emoji"></i>
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">22°c</span>
+              </div>
+            </div>
           </div>
           <div class="col">
-            Sun <br /><i class="fa-solid fa-cloud-showers-heavy"></i> <br />17°c
+            <div class="wForecast">
+              <div class="fDay">Sat</div>
+              <br />
+              <i class="fa-solid fa-sun emoji"></i>
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">21°c</span>
+              </div>
+            </div>
           </div>
         </div>
         <hr />
       </div>
+      <br />
       <div class="signature">
         This project is was created by
         <a href="https://twitter.com/_MiaoCloud">Kai</a> and is
@@ -84,8 +128,10 @@
           >open source on GitHub</a
         >
       </div>
+      <br />
+      <button class="themeButton">Dark Mode</button>
     </div>
-    <link rel="stylesheet" href="src/app.js" />
+    <script src="src/app.js"></script>
     <script
       src="https://kit.fontawesome.com/3cc9d87130.js"
       crossorigin="anonymous"
