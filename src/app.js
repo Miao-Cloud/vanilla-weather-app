@@ -43,7 +43,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  celsiusTemp = response.data.temperature.current;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = response.data.city;
   descElement.innerHTML = response.data.condition.description;
   humiElement.innerHTML = response.data.temperature.humidity;
@@ -69,7 +71,28 @@ function handleSubmit(event) {
   console.log(cityInputElement.value);
 }
 
-search("Tokyo");
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displaycelsisTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
 
 let form = document.querySelector("#searchForm");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheitLink");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsiusLink");
+celsiusLink.addEventListener("click", displaycelsisTemperature);
+
+search("Tokyo");
