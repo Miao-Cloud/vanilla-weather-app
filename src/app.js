@@ -33,6 +33,35 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForcast() {
+  let forcastElement = document.querySelector("#forcast");
+
+  let forcastHTML = `<div class="row">`;
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forcastHTML =
+      forcastHTML +
+      `<div class="col">
+            <div class="wForecast">
+              <div class="fDay">${day}</div>
+              <br />
+              <img
+                class="tempImg"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear"
+              />
+              <div class="fTemp">
+                <br />
+                <span class="fTemp">25°c</span>
+              </div>
+            </div>
+          </div>`;
+  });
+
+  forcastHTML = forcastHTML + `</div>`;
+  forcastElement.innerHTML = forcastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -96,3 +125,4 @@ let celsiusLink = document.querySelector("#celsiusLink");
 celsiusLink.addEventListener("click", displaycelsisTemperature);
 
 search("Tokyo");
+displayForcast();

@@ -84,6 +84,7 @@
 }
 .weather {
   max-width: 800px;
+  min-width: 800px;
   margin: 0 auto;
   background: #a8b5e0;
   border: 1px solid #27214256;
@@ -177,7 +178,7 @@
 }
 
 .tempImg {
-  width: 95px;
+  width: 99px;
 }
 
 .signature {
