@@ -1,6 +1,7 @@
 .body {
   display: block;
   background: #d5e3f0;
+  font-family: Pokemon GB;
 }
 
 .themeButton {
@@ -8,7 +9,6 @@
   color: #212b42;
   border: 1px solid #a8b5e0;
 
-  font-family: Century Gothic;
   font-size: 12px;
   display: block;
   margin: 10px auto;
@@ -83,13 +83,12 @@
   color: #ececec;
 }
 .weather {
-  max-width: 800px;
-  min-width: 800px;
+  max-width: 950px;
+  min-width: 950px;
   margin: 0 auto;
   background: #a8b5e0;
   border: 1px solid #27214256;
   border-radius: 16px;
-  font-family: Century Gothic;
   padding: 40px;
 }
 .weather input.search-input {
@@ -137,7 +136,7 @@
 
 .weatherInfo ul {
   color: rgba(33, 43, 66, 0.5);
-  font-size: 18px;
+  font-size: 16px;
   text-transform: capitalize;
   line-height: 30px;
   list-style: none;
@@ -167,7 +166,7 @@
 }
 .temps {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #212b42;
 
   padding: 50px 0;
@@ -187,6 +186,7 @@
 
 .signature {
   text-align: center;
+  font-size: 12px;
   font-style: italic;
   color: rgba(33, 43, 66, 0.5);
 }
