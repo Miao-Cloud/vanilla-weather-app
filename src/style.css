@@ -181,6 +181,10 @@
   width: 99px;
 }
 
+.maxTemp {
+  color: rgba(33, 43, 66, 0.5);
+}
+
 .signature {
   text-align: center;
   font-style: italic;
