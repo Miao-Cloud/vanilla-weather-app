@@ -33,7 +33,9 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForcast() {
+function displayForcast(response) {
+  console.log(response.data.daily);
+
   let forcastElement = document.querySelector("#forcast");
 
   let forcastHTML = `<div class="row">`;
@@ -62,6 +64,14 @@ function displayForcast() {
   forcastElement.innerHTML = forcastHTML;
 }
 
+function getForcast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "4b061e3ft17954dbb7f52badfdo001e5";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(displayForcast);
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -85,6 +95,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForcast(response.data.coordinates);
 }
 
 function search(city) {
@@ -125,4 +137,3 @@ let celsiusLink = document.querySelector("#celsiusLink");
 celsiusLink.addEventListener("click", displaycelsisTemperature);
 
 search("Tokyo");
-displayForcast();
